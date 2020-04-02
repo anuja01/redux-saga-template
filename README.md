@@ -26,3 +26,5 @@ With React Redux, your components never access the store directly - ```connect``
 used for dispatching actions to the Redux store. This is the only way to trigger a state change
 
 (change store data)
+
+complete sample: https://codesandbox.io/s/todo-app-with-redux-4mjbs

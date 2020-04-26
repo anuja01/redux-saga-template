@@ -9,7 +9,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ```npm install --save-dev redux-devtools```
 
-Note:
+Notes:   
+### Redux is a predictable state container
+
 ## Provider
 React Redux provides ```<Provider />```, which makes the Redux store available to the rest of your app
 

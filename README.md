@@ -34,4 +34,4 @@ complete sample: https://codesandbox.io/s/todo-app-with-redux-4mjbs
 ### Three main principles of Redux.  
    1. Single source of truth - The state of whole application is stored in an object tree within a single store.   
    2. State is read-only - The only way to change the state is to emit an action, an object describing what happened.   
-   3. Changes are mode with pure functions - To specify how the state tree is transformed by actions, you write pure reducers.   
+   3. Changes are mode with pure functions - To specify how the state tree is transformed by actions, you write pure reducers.   (Reducers takes the previous state and an action and return the new state)   

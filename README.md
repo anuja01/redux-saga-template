@@ -39,5 +39,25 @@ complete sample: https://codesandbox.io/s/todo-app-with-redux-4mjbs
 ### Selectors in redux.  
 Selecto takes state as an argument and used to filter out values from state as necessary to use in a component.   
 
-More Questions and answers: https://www.fullstacktutorials.com/interviews/redux-interview-questions-and-answers-33.html
+More Questions and answers: https://www.fullstacktutorials.com/interviews/redux-interview-questions-and-answers-33.html.  
 
+### Actions and action creators.  
+Action creators returns an action. 
+
+```
+// this function is the action creator
+ export const selectUser = (user) => {
+  // this return is the actual action
+  return(
+    type: 'SELECT_USER',
+    payload: user
+  )
+}
+
+```
+And then use the `selectUser` function in `bindActionCreators()` as below.  
+```
+ mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({selectUser: selectUser}, dispatch)
+}
+```

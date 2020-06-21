@@ -55,7 +55,7 @@ Action creators returns an action.
 }
 
 ```
-And then use the `selectUser` function/action creator in `bindActionCreators()` as below.  
+And then use the `selectUser` function (action creator) in `bindActionCreators()` as below.  
 ```
  mapDispatchToProps = (dispatch) => {
   return bindActionCreators({selectUser: selectUser}, dispatch)

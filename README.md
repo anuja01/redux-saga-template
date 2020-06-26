@@ -37,8 +37,10 @@ complete sample: https://codesandbox.io/s/todo-app-with-redux-4mjbs
    3. Changes are mode with pure functions - To specify how the state tree is transformed by actions, you write pure reducers.   (Reducers takes the previous state and an action and return the new state)   
    
 ### Selectors in redux.  
-Selecto takes state as an argument and used to filter out values from state as necessary to use in a component.   
-
+Selectors takes state as an argument and used to filter out values from state as necessary to use in a component.   
+Can use lodash object method [get](https://lodash.com/docs/#get) to get specific value from state object.  
+eg:   
+`const getCompanyList = () => state => get(state, 'data.companyList', [])`.  
 More Questions and answers: https://www.fullstacktutorials.com/interviews/redux-interview-questions-and-answers-33.html.  
 
 ### Actions and action creators.  
